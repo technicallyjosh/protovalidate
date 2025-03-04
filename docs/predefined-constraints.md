@@ -18,7 +18,7 @@ messages. For example, to define a new rule for `float` fields, extend
 `buf.validate.FloatRules`, as follows:
 
 ```proto
-import "buf/validate/validate.proto";
+import "buf/validate/descriptor.proto";
 
 extend buf.validate.FloatRules {
   float abs_range = 80048952 [(buf.validate.predefined).cel = {
